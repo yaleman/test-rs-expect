@@ -1,9 +1,9 @@
 fn main() {
     println!("Hello, world!");
-    let foo = dialoguer::Confirm::new()
+    let response = dialoguer::Confirm::new()
         .with_prompt("Are you sure?")
         .interact();
-    println!("Result: {:?}", foo);
+    println!("Result: {:?}", response);
 }
 
 #[test]
